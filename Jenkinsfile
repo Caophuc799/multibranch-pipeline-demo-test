@@ -7,7 +7,7 @@ pipeline {
                 script {
                     def myValue = "Hello, Jenkins!"
                     echo "My value is: ${myValue}"
-                    sleep 5000
+                    sleep 5
                 }
             }
         }
