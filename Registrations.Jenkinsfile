@@ -13,9 +13,7 @@ pipeline {
         // Add more stages as needed
         stage ('Invoke_pipeline') {
             steps {
-                build job: 'banqup-mobile-app/develop-up', parameters: [
-                string(name: 'param1', value: "value1")
-                ]
+                build job: 'banqup-mobile-app/develop-up'
             }
         }
     }
