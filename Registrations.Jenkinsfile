@@ -13,7 +13,7 @@ pipeline {
         // Add more stages as needed
         stage ('Invoke_pipeline') {
             steps {
-                build job: 'banqup-mobile-app/develop-up'
+                build job: 'banqup-mobile-app/develop-up', propagate: false, wait: false
             }
         }
     }
